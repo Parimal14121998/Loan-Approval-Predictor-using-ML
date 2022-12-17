@@ -30,7 +30,7 @@ Implementation Logic:
 3)Refer the zip for :-
 i) app.py -> Tells us about the code view , logic ,signup/login approach ,flask deployment
 ii) templates folder for html ; rendering the display/output.
-iii) lp.model is our model creation file.
+iii) lp.model is our model creation file created through p1.py and then we use this in app.py to predict the outcome.
 
 Observations:
 After EDA & feature Importance ; Applicants with very high incomes and co-applicant income with a good credit history have an excellent chance of getting loan approval.
