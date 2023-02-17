@@ -27,7 +27,7 @@ Model Selection by comparing different Classifiction Models
 Implementation Logic:
 1)Refer this Readme to know a quick overview.
 2)Refer the Jupyter notebook file [.ipynb] to understand about the whole ML Lifecycle.
-3)Refer the zip for :-
+3)Refer the loanapp folder for :-
 i) app.py -> Tells us about the code view , logic ,signup/login approach ,flask deployment
 ii) templates folder for html ; rendering the display/output.
 iii) lp.model is our model creation file created through p1.py and then we use this in app.py to predict the outcome.
