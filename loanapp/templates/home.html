@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Loan approval predictor app</title>
+
+<style>
+
+div#bt *{display:inline;margin: 0 50px;font-weight: bold;}
+*{font-size:18px;font-family:Courier;}
+body{background-color : skyblue;}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+input[type=submit] { 
+    background:coral;}
+
+
+</style>
+</head>
+
+<body>
+
+<h1 style="color:red;"><center>LOAN APPROVAL PREDICTOR </center><h1></br>
+<form method ="POST">
+
+Applicant's Gender : <input type="radio" name="gender" value="Male" checked=true />Male</input>
+<input type="radio" name="gender" value="Female"/> Female </input>
+</br></br>
+Are you Married ? : <input type="radio" name="married" value="Yes" checked=true/>Yes</input>
+<input type="radio" name="married" value="No"/> No</input>
+</br></br>
+Select Dependents :
+<select name = "dependents">
+<option value ="0" >0</option>
+<option value ="1" >1</option>
+<option value ="2" >2</option>
+<option value ="3" >3</option>
+</select>
+</br></br>
+Education : <input type="radio" name="education" value="Graduate" checked=true/>Graduate</input>
+<input type="radio" name="education" value="Not Graduate" />Not Graduate</input>
+</br></br>
+Self_Employed : <input type="radio" name="self_employed" value="Yes" checked=true/>Yes</input>
+<input type="radio" name="self_employed" value="No" />No</input>
+</br></br>
+Enter Applicant Income : <input type ="number" step="any" name="applicantincome"  />
+</br></br>
+Enter CoApplicant Income : <input type ="number" step="any" name="coapplicantincome"  />
+</br></br>
+Enter Loan Amount : <input type ="number" step="any" name="loanamount" />
+</br> </br>
+Enter Loan Amount Term : <input type ="number" step="any" name="loan_amount_term" placeholder = "in months" />
+</br></br>
+Select Credit History :
+<select name = "credit_history">
+<option value ="1" >1</option>
+<option value ="0" >0</option>
+</select>
+</br></br>
+Select Property Area :
+<select name = "property_area">
+<option value ="Rural" >Rural</option>
+<option value ="Urban" >Urban</option>
+<option value ="Semiurban">Semiurban</option>
+</select>
+</br></br>
+<div id="bt">
+<center><input type ="submit" value = "Predict" name = "submit1" />
+<input type ="submit" value = "Logout" name ="submit2"  /></center>
+</div>
+</form>
+</br>
+<center style="color:red;"><b>{{ msg }}</b><center>
+
+</body>
+</html>
